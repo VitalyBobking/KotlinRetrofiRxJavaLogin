@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data class="ReviewBinding">
+        <variable name="review" type="com.example.vitalii.kotlinretrofirxjavalogin.model.Review" />
+        <variable
+            name="viewModelReview"
+            type="com.example.vitalii.kotlinretrofirxjavalogin.viewmodel.ReviewViewModel"/>
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvUserNameAndDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{review.createdBy.username +':'+ review.createdAt}"
+            android:textColor="@color/navyBlue"
+            android:layout_marginTop="4dp"
+            />
+        <TextView
+            android:id="@+id/tvRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@{@string/rate +':'+ String.valueOf(review.rate)}"
+            android:textColor="@color/navyBlue"
+            android:layout_marginTop="4dp"
+            />
+
+        <TextView
+            android:id="@+id/tvComment"
+            android:textColor="@color/navyBlue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{review.text}"
+            android:layout_marginTop="8dp"
+            android:textSize="18sp"
+            />
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

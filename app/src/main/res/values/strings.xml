@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">KotlinRetrofiRxJavaLogin</string>
+    <string name="password">password</string>
+    <string name="email">email or username</string>
+    <string name="login">Login</string>
+    <string name="reviews">reviews</string>
+    <string name="submit_review">submit review</string>
+    <string name="type_yor_review">type yor review</string>
+    <string name="logout">logout</string>
+    <string name="register">register</string>
+
+    <string name="type_your_review">Type your review…</string>
+    <string name="our_register">You out from register</string>
+    <string name="made_review">You made the review</string>
+    <string name="fill_out_fields">fill out the fields</string>
+    <string name="action_sign_in">register</string>
+    <string name="name">username</string>
+    <string name="rate">rate</string>
+    <string name="sign_a_guest">sign a guest</string>
+    <string name="please_register">Please register</string>
+    <string name="not_registered">You are not registered</string>
+</resources>
